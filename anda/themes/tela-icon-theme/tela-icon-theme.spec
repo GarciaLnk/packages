@@ -1,13 +1,15 @@
-%global tag 2024-09-04
+%global commit ba6354539f1b7802a15da662b35a3be287befb4d
+%global commit_date 20250205
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Name:           tela-icon-theme
-Version:        20240904
+Version:        %commit_date.%shortcommit
 Release:        1%?dist
 Summary:        Tela icon theme for linux desktops
 
 License:        GPL-3.0
 URL:            https://github.com/vinceliuice/Tela-icon-theme/
-Source0:        %{url}/archive/refs/tags/%{tag}.tar.gz
+Source0:        %url/archive/%commit/Tela-icon-theme-%commit.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  gtk-update-icon-cache fdupes
@@ -16,7 +18,7 @@ BuildRequires:  gtk-update-icon-cache fdupes
 Tela icon theme for linux desktops.
 
 %prep
-%autosetup -n Tela-icon-theme-%{tag}
+%autosetup -n Tela-icon-theme-%{commit}
 
 %build
 

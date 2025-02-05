@@ -1,3 +1,5 @@
-let release = gh("vinceliuice/Tela-icon-theme");
-rpm.global("tag", release);
-rpm.version(sub("-", "", release));
+rpm.global("commit", gh_commit("vinceliuice/Tela-icon-theme"));
+if rpm.changed() {
+  rpm.release();
+  rpm.global("commit_date", date());
+}
