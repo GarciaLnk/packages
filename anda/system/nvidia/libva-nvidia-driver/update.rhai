@@ -1,0 +1,8 @@
+let v = gh("elFarto/nvidia-vaapi-driver");
+v.crop(1);
+v += "%{!?tag:^%{date}git%{shortcommit0}}";
+rpm.version(v);
+
+if rpm.changed() {
+    rpm.global("commit0", gh_commit("elFarto/nvidia-vaapi-driver"));
+}
