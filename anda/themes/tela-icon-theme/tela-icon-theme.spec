@@ -7,7 +7,7 @@ Version:        %commit_date.%shortcommit
 Release:        1%?dist
 Summary:        Tela icon theme for linux desktops
 
-License:        GPL-3.0
+License:        GPL-3.0-only
 URL:            https://github.com/vinceliuice/Tela-icon-theme/
 Source0:        %url/archive/%commit/Tela-icon-theme-%commit.tar.gz
 
