@@ -7,7 +7,7 @@ Version:        %commit_date.%shortcommit
 Release:        1%?dist
 Summary:        Fluent design theme for KDE
 
-License:        GPL-3.0
+License:        GPL-3.0-only
 URL:            https://github.com/vinceliuice/Fluent-kde
 Source0:        %url/archive/%commit/Fluent-kde-%commit.tar.gz
 
